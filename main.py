@@ -114,7 +114,7 @@ async def start(bot, update):
     )
 
 
-@Bot.on_message(filters.private & filters.text)
+@Client.on_message(filters.private & filters.text)
 async def countryinfo(bot, update):
     
     country = CountryInfo(update.text)
